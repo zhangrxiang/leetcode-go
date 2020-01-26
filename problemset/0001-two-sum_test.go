@@ -21,6 +21,17 @@ func TestTwoSum(t *testing.T) {
 }
 
 func twoSum(nums []int, target int) []int {
+	diff := make(map[int]int)
+	for k, v := range nums {
+		if d, ok := diff[v]; ok {
+			return []int{d, k}
+		}
+		diff[target-v] = k
+	}
+	return nil
+}
+
+func twoSum2(nums []int, target int) []int {
 	for i := 0; i < len(nums); i++ {
 		for j := i + 1; j < len(nums); j++ {
 			if target-nums[j] == nums[i] {
