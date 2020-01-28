@@ -22,7 +22,7 @@ import (
 //     请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
 //
 
-func TestName(t *testing.T) {
+func TestLengthOfLongestSubstring(t *testing.T) {
 	fmt.Println(lengthOfLongestSubstring("abcabcbb"))      //3
 	fmt.Println(lengthOfLongestSubstring("bbbbb"))         //1
 	fmt.Println(lengthOfLongestSubstring("pwwkew"))        //3
