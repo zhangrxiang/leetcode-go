@@ -27,6 +27,8 @@ func TestFindMedianSortedArrays(t *testing.T) {
 	log.Println(findMedianSortedArrays([]int{1, 2, 3, 4}, []int{3, 4, 5}))
 }
 
+//执行用时 :28 ms, 在所有 Go 提交中击败了11.82%的用户
+//内存消耗 :6 MB, 在所有 Go 提交中击败了23.64%的用户
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	nums := append(nums1, nums2...)
 	sort.Ints(nums)
