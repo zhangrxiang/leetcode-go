@@ -29,6 +29,8 @@ func TestLongestCommonPrefix(t *testing.T) {
 	log.Println(longestCommonPrefix([]string{"c", "b"}))
 }
 
+//执行用时 :0 ms, 在所有 Go 提交中击败了100.00%的用户
+//内存消耗 :2.4 MB, 在所有 Go 提交中击败了59.49%的用户
 func longestCommonPrefix(strs []string) string {
 	if len(strs) == 0 {
 		return ""
