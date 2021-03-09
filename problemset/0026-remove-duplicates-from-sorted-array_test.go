@@ -55,7 +55,7 @@ func TestRemoveDuplicates(t *testing.T) {
 		if k != l {
 			t.Fatal(fmt.Sprintf("want %d but %d ,arr %d", k, l, len(data[k])))
 		} else {
-			t.Log(fmt.Sprintf("want %d but %d ,arr %d", k, l, len(data[k])))
+			t.Log(fmt.Sprintf("want %d so %d ,arr %d", k, l, len(data[k])))
 		}
 	}
 }
